@@ -1,0 +1,127 @@
+/* Create a container for the product review page */
+.review-container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 20px;
+    text-align: left;
+}
+  
+/* Create a title for the product review page */
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 5vh;
+}
+  
+/* Create a yellow star rating using Unicode characters */
+.rating {
+    color: #f1c40f;
+    font-size: 36px; /* Make the stars larger */
+    display: flex;
+    align-items: center;
+}
+
+/* Create a score for the star rating */
+.score {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+  
+/* Create a list of reviews using flexbox */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 25px auto;
+}
+  
+  /* Style each review item */
+.review-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+  }
+  
+  /* Style the review author name and date */
+.review-author {
+    font-weight: 700;
+    margin-right: 10px;
+}
+  
+.review-date {
+    color: #999999;
+    font-size: 14px;
+}
+  
+/* Style the review content */
+.review-content {
+    flex: 1;
+    margin-left: 20px;
+}
+  
+/* Create a form for users to submit their own reviews */
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+  
+/* Style the input fields and the submit button */
+.review-input {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    max-width: 75%;
+}
+  
+.review-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    background-color: #FED8B3;
+    cursor: pointer;
+    width: 200px;
+    align-self: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2vh;
+}
+
+.review-button.button:hover {
+    background-color: #c46b12;
+}
+
+/* Create a header for the new review form */
+.review-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Create a rating for the new review form */
+.review-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+/* Style the rating header and the stars */
+.rating-header {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+  
+.rating-stars {
+    color: #f1c40f;
+    font-size: 24px;
+}
+  

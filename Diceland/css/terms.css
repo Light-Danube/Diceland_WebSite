@@ -1,0 +1,49 @@
+.terms-main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 2vh;
+}
+  
+.terms-main h1 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 2vh;
+}
+
+.terms-main h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.terms-main h3.section-heading {
+  font-size: 24px;
+  margin-top: 5vh;
+}
+
+.terms-main p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+.terms-main ol li {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+  
+@media (max-width: 768px) {
+  .terms-main h1 {
+    font-size: 24px;
+  }
+  
+  .terms-main p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,189 @@
+.catalog-main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    margin-top: 2vh;
+}
+
+
+.side-panel {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.side-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+.side-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.side-section input {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-label input {
+    margin-right: 5px;
+}
+
+.content-catalog {
+    width: 80%;
+    flex-grow: 1;
+}
+
+.product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+ 
+.product-card {
+    width: 30%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+  
+.product-card img {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+.product-title {
+    font-size: 20px;
+    margin: 0;
+}
+  
+.product-description {
+    margin: 10px 0;
+}
+  
+.product-price {
+    font-weight: bold;
+    margin: 0;
+}
+
+.page-list {
+    display: inline;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Additional Info */
+.add-info-sec {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    background-color: #f5f5f5;
+}
+
+.add-info {
+    display: flex;
+    align-items: center;
+}
+
+.add-info-text {
+    width:50%;
+}
+
+.add-info-text h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.add-info-text p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 2.25vh;
+}
+
+/* Game Room Section */
+.game-room-add {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #f5f5f5;
+}
+
+.game-room {
+    display: flex;
+    align-items: center;
+}
+
+.game-room-text {
+    width:50%;
+}
+
+.game-room-text h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.game-room-text p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 2vh;
+}
+
+.game-room-text button {
+    background-color: #FED8B3;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 50%;
+    justify-content: right;
+    transition: background-color 0.3s ease;
+}
+
+.game-room-text button:hover,
+.game-room-text button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.game-room-text button:hover {
+    transform: translateY(-1px);
+}
+  
+.game-room-text button:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}

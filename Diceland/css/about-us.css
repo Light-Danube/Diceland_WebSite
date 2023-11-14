@@ -1,0 +1,156 @@
+.about-main {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 25px;
+}
+
+/*1*/
+/*Section 1*/
+.about-us-first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-us-first .left {
+    width: 50%; /* Adjust as needed */
+}
+
+/*Section 2*/
+.about-us-second {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about-us-second .right {
+    width: 50%; /* Adjust as needed */
+}
+
+/* Common styling for both sections */
+.left, .right {
+    padding: 20px;
+}
+
+h2, p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Our team*/
+.team-section {
+    text-align: center;
+}
+
+.team-section .center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-section .team-container {
+    position: relative;
+    margin: 10px;
+    width: 30%;
+}
+
+.team-section img {
+    width: 85%;
+    max-width: 100%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-section h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.team-section img:hover {
+    transform: scale(1.1);
+}
+
+/*Terms-Section*/
+.terms-temp{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #f5f5f5;
+}
+
+.terms-sign {
+    display: flex;
+    align-items: center;
+}
+
+.terms-sign-text {
+    max-width: 400px;
+}
+
+.terms-sign-text h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.terms-sign-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.terms-sign-text button {
+    background-color: #FED8B3;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.terms-sign-text button:hover,
+.terms-sign-text button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.terms-sign-text button:hover {
+    transform: translateY(-1px);
+}
+  
+.terms-sign-text button:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.terms-sign-img {
+    width:66%;
+    max-width: 100%;
+    position: relative;
+    left:250px;
+    transition: transform 0.3s ease;
+}
+
+.terms-sign-img:hover {
+    transform: scale(1.1);
+}

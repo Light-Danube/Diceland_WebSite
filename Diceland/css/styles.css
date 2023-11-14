@@ -1,0 +1,389 @@
+/* Import Google font - Inika */
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inika', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER PART*/
+header {
+    background-color: #FED8B3;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top:0;
+    z-index: 9999999;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    height: auto;
+    max-height: 18vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.nav {
+    color: #000;
+    font-family: Inika;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between; /* Adjusted for smaller screens */
+    align-items: center;
+    width: 80%; /* Adjusted for smaller screens */
+    margin-top: 10px; /* Adjusted for smaller screens */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1151px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 25vh;
+    margin-left: 2vh;
+    bottom:5vh;
+}
+
+.nav-item {
+    display: inline;
+    position: relative;
+    color: #000;
+    margin-left: 75px;
+    margin-bottom: 32px;
+    text-transform: capitalize;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #ffffff;
+}
+
+.nav-item:first-child {
+    margin-left: 20px;
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 26px;
+    margin-left: 75px;
+    flex: 1 1 auto;
+    flex-grow: 1;
+}
+
+.search-bar input {
+    height: 39px;
+    border: 1px solid #d0d0d0;
+    border-radius: 100px;
+    padding: 0 100px 0px 50px;
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(136, 136, 136, 0);
+    font-size: 18px;
+    transition: box-shadow .3s;
+    flex-grow: 1;
+}
+
+.search-icon {
+    width: 45px;
+    height: 25px;
+    display: flex;
+    font-size: 20px;
+    color: #888888;
+    margin-left: -45px;
+}
+
+.search-icon a {
+    text-decoration: none;
+ }
+
+.user-account, .user-stash {
+    position: relative;
+    top:-50px;
+    left:250px;
+}
+
+.user-account {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 13px;
+}
+
+.user-stash {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 13px;
+}
+
+.info-column {
+    display: flex;
+    position: relative;
+    flex-direction:row;
+    align-items: center;
+    left:450px;
+    top:-15px;
+}
+
+.info-text {
+    margin-right: 20px;
+    flex:1;
+}
+
+.info-text p {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    display: inline-block;
+}
+
+.info-text a {
+    text-decoration: none;
+    color: #000;
+ }
+
+.info-text a:hover {
+    text-decoration: underline;
+}
+
+/*FOOTER PART*/
+.footer-container {
+    width: auto;
+    max-width: 1453px;
+    height: auto;
+    max-height: 436px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #FED8B3;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 18%;
+    padding: 0 12px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    background-color: #FED8B3;
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #3498db;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.footer-col:first-child {
+    position: relative;
+    top: -1.8em;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #24262b;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #ffffff;
+    background-color: #24262b;
+}
+
+/*responsive-header*/
+
+@media (max-width: 1024px) {
+    .container {
+      width: 95%;
+    }
+  
+    .nav-list {
+      right: -200px;
+    }
+  
+    .user-account, .user-stash {
+      left: 200px;
+    }
+  
+    .info-column {
+      left: 400px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .nav {
+      width: 100%;
+      justify-content: center;
+      margin-top: 0;
+    }
+  
+    .nav-list {
+      right: 0;
+      margin-left: 0;
+      top: 0;
+    }
+  
+    .nav-item {
+      margin-left: 20px;
+    }
+  
+    .search-bar {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .user-account, .user-stash {
+      left: 0;
+      top: 0;
+    }
+  
+    .info-column {
+      left: 0;
+      top: 0;
+      flex-direction: column;
+    }
+  
+    .info-text {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .nav-list {
+      display: none;
+    }
+  
+    .search-bar {
+      display: none;
+    }
+  
+    .user-account, .user-stash {
+      display: none;
+    }
+  
+    .info-column {
+      display: none;
+    }
+}
+  
+
+
+/*responsive* - footer*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .footer-col:first-child {
+    top: 0;
+  }
+
+  .footer-col ul:not(:last-child) {
+    display: none; /* Hide Каталог columns on smaller devices */
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+
+}

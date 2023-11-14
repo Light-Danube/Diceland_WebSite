@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Каталог | Catalog</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+
+        <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/breadcrump.css">
+        <link rel="stylesheet" href="css/catalog.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/diceland-logo.webp" alt="logo"></a>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Пошук товару">
+                    <a href="product.html"><div class="search-icon">🔍</div></a>
+                </div>
+
+                <div class="info-column">
+                    <div class="info-text">
+                        <p>Графік Роботи:<br>Будні: 10.00-22.00<br>Сб-Нд: 11.00-17.00</p>
+                    </div>
+                    <div class="info-text">
+                        <p>+380-97-284-33-26</p>
+                        <p><a href="contact.html">Передзвонити Вам?</a></p>
+                    </div>
+                </div>
+        
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="catalog.html">Каталог</a></li>
+                        <li class="nav-item"><a href="about-us.html">Про нас</a></li>
+                        <li class="nav-item"><a href="catalog.html">Новинки</a></li>
+                        <li class="nav-item"><a href="gameroom.html">GameRoom</a></li>
+                        <li class="nav-item"><a href="buyout-deliver.html">Оплата та Доставка</a></li>
+                        <li class="nav-item"><a href="reviews.html">Відгуки</a></li>
+                    </ul>
+                </nav>
+
+                <div class="user-account">
+                    <a href="register.html"><img src="images/diceland-user.webp" alt="logo"></a>
+                </div>
+                <div class="user-stash">
+                    <a href="stash.html"><img src="images/diceland-stash.webp" alt="logo"></a>
+                </div>
+                
+            </div>
+        </header>
+
+        <main class="catalog-main">
+            <div class="breadcrumb">
+                <a href="index.html">Головна</a> &gt;
+                <span class="current-page">Каталог</span>
+            </div>
+
+            <div class="content-wrapper">
+
+                <aside class="side-panel">
+                    <div class="content-nameplate">
+                        <h2>Каталог настільних ігор</h2>
+                    </div>
+
+                    <div class="side-section">
+                        <h4>Категорії</h4>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Хіти Продажу</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">Новинки</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3">Від партнерів</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox4">
+                            <label for="checkbox4">Наша Майстерня</label>
+                        </div>
+                    </div>
+
+                    <!-- Section 02 -->
+                    <div class="side-section">
+                        <h4>Жанр</h4>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox5">
+                            <label for="checkbox5">Сімейні</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox6">
+                            <label for="checkbox6">Стратегічні</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox7">
+                            <label for="checkbox7">Пригодницькі</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox8">
+                            <label for="checkbox8">Триллери</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox9">
+                            <label for="checkbox9">Спортивні</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox10">
+                            <label for="checkbox10">Рольові</label>
+                        </div>
+                    </div>
+
+                    <!-- Section 03 -->
+                    <div class="slider-wrapper"> 
+                        <div class="header"> 
+                            <h4 class="projtitle"> 
+                                Ціна
+                            </h4> 
+                        </div> 
+            
+                        <div class="price-input-container"> 
+                            <div class="price-input"> 
+                                <div class="price-field"> 
+                                    <span>Мінімальна ціна, грн</span> 
+                                    <input type="number" 
+                                        class="min-input" 
+                                        value="2500"> 
+                                </div> 
+                                <div class="price-field"> 
+                                    <span>Максимальна ціна, грн</span> 
+                                    <input type="number" 
+                                        class="max-input" 
+                                        value="8500"> 
+                                </div> 
+                            </div> 
+                            <div class="slider-container"> 
+                                <div class="price-slider"> 
+                                </div> 
+                            </div> 
+                        </div> 
+            
+                        <!-- Slider -->
+                        <div class="range-input"> 
+                            <input type="range" 
+                                class="min-range" 
+                                min="0" 
+                                max="10000" 
+                                value="2500" 
+                                step="1"> 
+                            <input type="range" 
+                                class="max-range" 
+                                min="0" 
+                                max="10000" 
+                                value="8500" 
+                                step="1"> 
+                        </div> 
+                    </div>
+
+                    <!-- Section 04 -->
+                    <div class="side-section">
+                        <h4>Спеціальні</h4>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox11">
+                            <label for="checkbox11">Один Ігрок</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox12">
+                            <label for="checkbox12">Ігри з України</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox13">
+                            <label for="checkbox13">Іншомовні</label>
+                        </div>
+
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox14">
+                            <label for="checkbox14">Kickstarter</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="content-catalog">
+                    <section class="product-list-container">
+                        <a href="product.html" target="_blank" class="product-card">
+                        <img src="images/diceland-product.webp" alt="Product Name 1">
+                        <h3 class="product-title">Товар</h3>
+                        <p class="product-description">Click on me to redirect to Товар!</p>
+                        <p class="product-price">від ₴10.00</p>
+                        </a>
+                        
+                        <a href="product.html" target="_blank" class="product-card">
+                            <img src="images/diceland-product.webp" alt="Product Name 2">
+                            <h3 class="product-title">Товар</h3>
+                            <p class="product-description">Click on me to redirect to Товар!</p>
+                            <p class="product-price">від ₴10.00</p>
+                        </a>
+            
+                        <a href="product.html" target="_blank" class="product-card">
+                            <img src="images/diceland-product.webp" alt="Product Name 3">
+                            <h3 class="product-title">Товар</h3>
+                            <p class="product-description">Click on me to redirect to Товар!</p>
+                            <p class="product-price">від ₴10.00</p>
+                        </a>
+            
+                        <a href="product.html" target="_blank" class="product-card">
+                            <img src="images/diceland-product.webp" alt="Product Name 4">
+                            <h3 class="product-title">Товар</h3>
+                            <p class="product-description">Click on me to redirect to Товар!</p>
+                            <p class="product-price">від ₴10.00</p>
+                        </a>
+            
+                        <a href="product.html" target="_blank" class="product-card">
+                            <img src="images/diceland-product.webp" alt="Product Name 5">
+                            <h3 class="product-title">Товар</h3>
+                            <p class="product-description">Click on me to redirect to Товар!</p>
+                            <p class="product-price">від ₴10.00</p>
+                        </a>
+            
+                        <a href="product.html" target="_blank" class="product-card">
+                            <img src="images/diceland-product.webp" alt="Product Name 6">
+                            <h3 class="product-title">Товар</h3>
+                            <p class="product-description">Click on me to redirect to Товар!</p>
+                            <p class="product-price">від ₴10.00</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="page-list">
+                <span>[1]</span>
+                <span>[2]</span>
+                <span>[3]</span>
+            </div>
+
+            <!-- Additional Info -->
+            <section class="add-info-sec">
+                <div class="add-info">
+                    <div class="add-info-text">
+                        <h3>Що обрати?</h3>
+                        <p>У GameRoom ми віримо, що настільні ігри - це не просто хобі, це стиль життя. 
+                            <br>Ми - команда ентузіастів, яка присвятила свою діяльність сприянню зустрічам, спілкуванню та неймовірним пригодам в світі настільних ігор...
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gameroom -->
+            <section class="game-room-sec">
+                <div class="game-room">
+                    <div class="game-room-text">
+                        <h3>Про GameRoom</h3>
+                        <p>У GameRoom ми віримо, що настільні ігри - це не просто хобі, це стиль життя. 
+                            <br>Ми - команда ентузіастів, яка присвятила свою діяльність сприянню зустрічам, спілкуванню та неймовірним пригодам в світі настільних ігор...
+                        </p>
+                        <form action="gameroom.html">
+                            <button>Докладніше...</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <a href="index.html"><img src="images/diceland-logo-footer.webp" alt="logo"></a>
+                        <h4>All rights reserved.</h4>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Каталог</h4>
+                        <ul>
+                            <li><a href="catalog.html">За категоріями</a></li>
+                            <li><a href="catalog.html">За Жанрами</a></li>
+                            <li><a href="catalog.html">Спеціальні</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Каталог</h4>
+                        <ul>
+                            <li><a href="catalog.html">Українські</a></li>
+                            <li><a href="catalog.html">Хіти Продажу</a></li>
+                            <li><a href="catalog.html">Kickstarter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Клієнтам</h4>
+                        <ul>
+                            <li><a href="account.html">Особистий кабінет</a></li>
+                            <li><a href="about-us.html">Про нас</a></li>
+                            <li><a href="buyout-deliver.html">Оплата та Доставка</a></li>
+                            <li><a href="reviews.html">Відгуки</a></li>
+                            <li><a href="gameroom.html">GameRoom</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Зв'язатися з нами</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

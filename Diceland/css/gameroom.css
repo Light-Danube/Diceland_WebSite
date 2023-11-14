@@ -1,0 +1,125 @@
+.gameroom-main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 20px;
+}
+
+.discord-parties, .fanclub-parties {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.gameroom-main .info-panel {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.gameroom-main h2 {
+    display:flex;
+    font-size: 36px;
+    margin-bottom: 2.5vh;
+}
+
+.gameroom-main .left {
+    width: 80%;
+    max-width: 100%;
+}
+
+.gameroom-main .left p {
+    font-size: 20px;
+    margin: 3vh 0;
+}
+
+.gameroom-main .center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameroom-main .join-container {
+    position: relative;
+    margin: 10px;
+    width: 30%;
+}
+
+.gameroom-main h3 {
+    font-size: 25px;
+}
+
+.gameroom-main img {
+    width: 100%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gameroom-main img:hover {
+    transform: scale(1.1);
+}
+
+.gameroom-main .join-button {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #FED8B3;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 70%;
+    max-width: 80%;
+}
+
+.gameroom-main .join-button:hover,
+.gameroom-main .join-button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.gameroom-main .join-button:hover {
+  transform: translateY(-1px);
+}
+
+.gameroom-main .join-button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.gameroom-main .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameroom-main .row img {
+    width: 20%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gameroom-main .row img:hover {
+    transform: scale(1.1);
+}

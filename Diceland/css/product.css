@@ -1,0 +1,119 @@
+.product-main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 55%;
+    max-width: 100%;
+    height: auto;
+    margin-right: 2rem;
+    margin-top: 5vh;
+}
+
+.product-info {
+    width: 45%;
+    margin-top: 3vh;
+}
+
+.product-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 1.2vh;
+    margin-bottom: 1vh;
+}
+
+.product-avaliability,
+.product-article {
+    display: inline;
+    font-size: 13px;
+    margin: 0.1em;
+    font-weight: 200;
+    color: #333333;
+}
+
+.product-price {
+    font-size: 35px;
+    color: black;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.product-button {
+    display: block;
+    width: 50%;
+    height: 5vh;
+    background-color: #FED8B3;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.product-button:hover,
+.product-button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.product-button:hover {
+    transform: translateY(-1px);
+}
+  
+.product-button:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.product-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-description h2 {
+    font-size: 30px;
+}
+
+.product-description p {
+    font-size: 20px;
+    margin-bottom: 1.1vh;
+}
+
+/* Create a row of containers with images and text for the downloads */
+.download-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.download-container {
+    margin: 10px;
+}
+
+.download-image {
+    width: 15%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+.download-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-name {
+    font-weight: bold;
+}
+
+.download-size {
+    font-style: italic;
+}
+

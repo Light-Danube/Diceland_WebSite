@@ -1,0 +1,190 @@
+/* Import Google font - Inika */
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inika', sans-serif;
+  }
+  
+body {
+	min-height: 100vh;
+	width: 100%;
+	background: #FED8B3;
+}
+
+.stash-main {
+	max-width: 900px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.stash-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 900px;
+	width: 100%;
+	background: #fff;
+	border-radius: 7px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+  
+h1 {
+	font-size: 32px;
+	margin-left: 2vh;
+	font-weight: bold;
+	text-align: left;
+}
+  
+.product {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+  
+.product-image {
+	width: 128px;
+	height: 128px;
+	object-fit: cover;
+}
+  
+.product-info {
+	flex: 1;
+	margin-left: 2vh;
+}
+  
+.product-title {
+	font-size: 24px;
+	font-weight: bold;
+}
+  
+.product-quantity {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+  
+.product-quantity-label {
+	font-size: 18px;
+	margin-right: 10px;
+}
+  
+.product-quantity-input {
+	width: 20%;
+	font-size: 1.1rem;
+	height: 30px;
+	border: 1px solid black;
+	text-align: center;
+}
+  
+.product-price {
+	font-size: 18px;
+	font-weight:200;
+	margin-top: 10px;
+}
+  
+.discount {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 0;
+	margin-left: 2vh;
+}
+  
+.discount-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+  
+.discount-percentage {
+	font-size: 18px;
+	color: green;
+	margin-right: 2vh;
+}
+  
+.total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 0;
+	margin-left: 2vh;
+}
+  
+.total-title {
+	font-size: 24px;
+	font-weight: bold;
+}
+  
+.total-price {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	margin-right: 2vh;
+}
+  
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 0;
+	margin-left: 2vh;
+	margin-right: 2vh;
+}
+  
+.button {
+	width: 225px;
+	height: 50px;
+	border: none;
+	border-radius: 10px;
+	background: #FED8B3;
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+  
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+  
+@media (max-width: 600px) {
+	.product {
+	  flex-direction: column;
+	}
+  
+	.product-image {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.product-info {
+	  margin-left: 0;
+	  margin-top: 20px;
+	}
+  
+	.buttons {
+	  flex-direction: column;
+	}
+  
+	.button {
+	  width: 100%;
+	  margin: 10px 0;
+	}
+}

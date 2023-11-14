@@ -1,0 +1,76 @@
+.account-main {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1440px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.account-data {
+    max-width: 800px;
+    width: 100%;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 1.25vh;
+    margin-bottom: 1.25vh;
+}
+
+.user-info {
+    text-align: left;
+}
+
+.user-field {
+    margin-bottom: 1.25vh;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.confirmation-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-clip: padding-box;
+    background-color: #FED8B3;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Inika',sans-serif;
+}
+
+button:hover,
+button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}

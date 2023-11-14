@@ -1,0 +1,204 @@
+/*MAIN PART*/
+.home-main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 25px;
+}
+
+/*Section 1*/
+
+.partners-section {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.partners-section h3 {
+    font-size: 30px;
+}
+
+.partner-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partner-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Section 2*/
+.product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+ 
+.product-card {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+  
+.product-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+.product-title {
+    font-size: 20px;
+    margin: 0;
+}
+  
+.product-description {
+    margin: 10px 0;
+}
+  
+.product-price {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* About Us Section */
+.about-us-small {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #f5f5f5;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+}
+
+.about-us-text {
+    width: 36%;
+}
+
+.about-us-text h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about-us-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-us-text button {
+    background-color: #FED8B3;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-us-img {
+    width:66%;
+    max-width: 100%;
+    position: relative;
+    left:250px;
+    transition: transform 0.3s ease;
+}
+
+.about-us-img:hover {
+    transform: scale(1.1);
+}
+
+/* Game Room Section */
+.game-room-small {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    background-color: #f5f5f5;
+}
+
+.game-room {
+    display: flex;
+    align-items: center;
+}
+
+.game-room-text {
+    width: 34%;
+    text-align: right;
+    margin-left: 100px;
+}
+
+.game-room-text h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.game-room-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.game-room-text button {
+    background-color: #FED8B3;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gameroom-img {
+    width:66%;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.gameroom-img:hover {
+    transform: scale(1.1);
+}
+
+/*Button General*/
+.game-room-text button:hover,
+.game-room-text button:focus,
+.about-us-text button:hover,
+.about-us-text button:focus{
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.game-room-text button:hover,
+.about-us-text button:hover {
+    transform: translateY(-1px);
+}
+  
+.game-room-text button:active,
+.about-us-text button:active{
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}

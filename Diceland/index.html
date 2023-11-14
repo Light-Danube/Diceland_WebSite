@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Diceland | Cast Your Fate</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+
+        <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/slyder.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/diceland-logo.webp" alt="logo"></a>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Пошук товару">
+                    <a href="product.html"><div class="search-icon">🔍</div></a>
+                </div>
+
+                <div class="info-column">
+                    <div class="info-text">
+                        <p>Графік Роботи:<br>Будні: 10.00-22.00<br>Сб-Нд: 11.00-17.00</p>
+                    </div>
+                    <div class="info-text">
+                        <p>+380-97-284-33-26</p>
+                        <p><a href="contact.html">Передзвонити Вам?</a></p>
+                    </div>
+                </div>
+        
+                <nav class="nav">
+                    <button class="burger-menu" onclick="toggleNavList()">
+                        <span class="burger-bar"></span>
+                        <span class="burger-bar"></span>
+                        <span class="burger-bar"></span>
+                    </button>
+
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="catalog.html">Каталог</a></li>
+                        <li class="nav-item"><a href="about-us.html">Про нас</a></li>
+                        <li class="nav-item"><a href="catalog.html">Новинки</a></li>
+                        <li class="nav-item"><a href="gameroom.html">GameRoom</a></li>
+                        <li class="nav-item"><a href="buyout-deliver.html">Оплата та Доставка</a></li>
+                        <li class="nav-item"><a href="reviews.html">Відгуки</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="user-account">
+                    <a href="register.html"><img src="images/diceland-user.webp" alt="logo"></a>
+                </div>
+                <div class="user-stash">
+                    <a href="stash.html"><img src="images/diceland-stash.webp" alt="logo"></a>
+                </div>
+            </div>
+        </header>
+
+        <main class="home-main">
+            <!-- Slider & Image -->
+            <div class="center">
+                <div class="carousel-wrapper">
+                    <!-- abstract radio buttons for slides --> 
+                    <input id="slide1" type="radio" name="controls" checked="checked" />
+                    <input id="slide2" type="radio" name="controls" />
+                    <input id="slide3" type="radio" name="controls" />
+                    <input id="slide4" type="radio" name="controls" />
+                    <input id="slide5" type="radio" name="controls" />
+                
+                    <!-- navigation dots -->
+                    <label for="slide1" class="nav-dot"></label>
+                    <label for="slide2" class="nav-dot"></label>
+                    <label for="slide3" class="nav-dot"></label>
+                    <label for="slide4" class="nav-dot"></label>
+                    <label for="slide5" class="nav-dot"></label>
+                
+                    <!-- arrows -->
+                    <label for="slide1" class="left-arrow"> 🢀 </label>
+                    <label for="slide2" class="left-arrow"> 🢀 </label>
+                    <label for="slide3" class="left-arrow"> 🢀 </label>
+                    <label for="slide4" class="left-arrow"> 🢀 </label>
+                    <label for="slide5" class="left-arrow"> 🢀 </label>
+                
+                    <label for="slide1" class="right-arrow"> 🢂 </label>
+                    <label for="slide2" class="right-arrow"> 🢂 </label>
+                    <label for="slide3" class="right-arrow"> 🢂 </label>
+                    <label for="slide4" class="right-arrow"> 🢂 </label>
+                    <label for="slide5" class="right-arrow"> 🢂 </label>
+                
+                    <div class="carousel">
+                        <ul>
+                            <li>
+                                <img src="images/diceland-wide-game-3.webp" alt="add_img_1">
+                            </li>
+                            <li>
+                                <img src="images/diceland-wide-game-2.webp" alt="add_img_2">
+                            </li>
+                            <li>
+                                <img src="images/diceland-wide-game-3.webp" alt="add_img_3">
+                            </li>
+                            <li>
+                                <img src="images/diceland-wide-game-2.webp" alt="add_img_4">
+                            </li>
+                            <li>
+                                <img src="images/diceland-wide-game-2.webp" alt="add_img_5">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Второй блок -->
+            <section class="partners-section">
+                <h3>Наші Партнери</h3>
+                <div class="partner-images">
+                    <img src="images/diceland-partner.webp" alt="Partner 1">
+                    <img src="images/diceland-partner.webp" alt="Partner 2">
+                    <img src="images/diceland-partner.webp" alt="Partner 3">
+                    <img src="images/diceland-partner.webp" alt="Partner 4">
+                    <img src="images/diceland-partner.webp" alt="Partner 5">
+                </div>
+            </section>        
+        
+            <!-- Small Catalog -->
+            <section class="product-list-container">
+
+                <a href="catalog.html" class="product-card">
+                <img src="images/diceland-product.webp" alt="Product Name 1">
+                <h3 class="product-title">Хіти Продажу </h3>
+                <p class="product-description">Click on me to redirect to Каталог!</p>
+                <p class="product-price">від ₴10.00</p>
+                </a>
+                
+                <a href="catalog.html" class="product-card">
+                    <img src="images/diceland-product.webp" alt="Product Name 2">
+                    <h3 class="product-title">Новинки</h3>
+                    <p class="product-description">Click on me to redirect to Каталог!</p>
+                    <p class="product-price">від ₴10.00</p>
+                </a>
+
+                <a href="catalog.html" class="product-card">
+                    <img src="images/diceland-product.webp" alt="Product Name 3">
+                    <h3 class="product-title">Kickstarter</h3>
+                    <p class="product-description">Click on me to redirect to Каталог!</p>
+                    <p class="product-price">від ₴10.00</p>
+                </a>
+            </section>
+
+            <!-- About Us -->
+            <section class="about-us-small">
+                <div class="about-us">
+                    <div class="about-us-text">
+                        <h3>Про нас</h3>
+                        <p>Наша історія розпочалася з великого запалу та безмежної пристрасті до настільних ігор.
+                            <br>Ми - молода команда ентузіастів, які завжди вірили у силу гри та її здатність зближувати людей...
+                        </p>
+                        <form action="about-us.html">
+                            <button>Докладніше...</button>
+                        </form>
+                    </div>
+                    <img class="about-us-img" src="images/diceland-about-us.webp" alt="About Us">
+                </div>
+            </section>
+        
+            <!-- Gameroom -->
+            <section class="game-room-small">
+                <div class="game-room">
+                    <img class="gameroom-img" src="images/diceland-gameroom.webp" alt="Game Room">
+                    <div class="game-room-text">
+                        <h3>Про GameRoom</h3>
+                        <p>У GameRoom ми віримо, що настільні ігри - це не просто хобі, це стиль життя. 
+                            <br>Ми - команда ентузіастів, яка присвятила свою діяльність сприянню зустрічам, спілкуванню та неймовірним пригодам в світі настільних ігор...
+                        </p>
+                        <form action="gameroom.html">
+                            <button>Докладніше...</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <a href="index.html"><img src="images/diceland-logo-footer.webp" alt="logo"></a>
+                        <h4>All rights reserved.</h4>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Каталог</h4>
+                        <ul>
+                            <li><a href="catalog.html">За категоріями</a></li>
+                            <li><a href="catalog.html">За Жанрами</a></li>
+                            <li><a href="catalog.html">Спеціальні</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Каталог</h4>
+                        <ul>
+                            <li><a href="catalog.html">Українські</a></li>
+                            <li><a href="catalog.html">Хіти Продажу</a></li>
+                            <li><a href="catalog.html">Kickstarter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Клієнтам</h4>
+                        <ul>
+                            <li><a href="account.html">Особистий кабінет</a></li>
+                            <li><a href="about-us.html">Про нас</a></li>
+                            <li><a href="buyout-deliver.html">Оплата та Доставка</a></li>
+                            <li><a href="reviews.html">Відгуки</a></li>
+                            <li><a href="gameroom.html">GameRoom</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Зв'язатися з нами</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
