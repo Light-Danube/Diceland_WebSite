@@ -43,6 +43,7 @@ h1 {
 .product {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	margin: 20px 0;
 }
   
@@ -163,28 +164,58 @@ h1 {
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+.delete-button {
+    background-color: #FED8B3; /* Red background color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c85000; /* Darker red on hover */
+}
+
+/*Responsive Design*/
   
 @media (max-width: 600px) {
-	.product {
-	  flex-direction: column;
-	}
-  
-	.product-image {
-	  width: 100%;
-	  height: auto;
-	}
-  
-	.product-info {
-	  margin-left: 0;
-	  margin-top: 20px;
-	}
-  
-	.buttons {
-	  flex-direction: column;
-	}
-  
-	.button {
-	  width: 100%;
-	  margin: 10px 0;
-	}
+    .stash-container {
+        max-width: 100%;
+    }
+
+    .product {
+        flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+    }
+
+    .product-image {
+        width: 100%;
+		max-width: 128px;
+        height: auto;
+        max-height: 128px; /* Adjust the max height as needed */
+    }
+
+    .product-info {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+	.delete-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

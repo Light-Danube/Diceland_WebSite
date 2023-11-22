@@ -18,6 +18,7 @@
     </head>
 
     <body>
+        <!--Header-->
         <header>
             <div class="container">
                 <div class="logo">
@@ -25,8 +26,8 @@
                 </div>
 
                 <div class="search-bar">
-                    <input type="text" placeholder="Пошук товару">
-                    <a href="product.html"><div class="search-icon">🔍</div></a>
+                    <input type="search" placeholder="Пошук товару">
+                    <a href="product.html"><div class="search-icon"><i class="fas fa-search"></i></div></a>
                 </div>
 
                 <div class="info-column">
@@ -40,31 +41,26 @@
                 </div>
         
                 <nav class="nav">
-                    <button class="burger-menu" onclick="toggleNavList()">
-                        <span class="burger-bar"></span>
-                        <span class="burger-bar"></span>
-                        <span class="burger-bar"></span>
-                    </button>
-
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="catalog.html">Каталог</a></li>
                         <li class="nav-item"><a href="about-us.html">Про нас</a></li>
-                        <li class="nav-item"><a href="catalog.html">Новинки</a></li>
+                        <li class="nav-item"><a href="catalog.html">Каталог</a></li>
                         <li class="nav-item"><a href="gameroom.html">GameRoom</a></li>
                         <li class="nav-item"><a href="buyout-deliver.html">Оплата та Доставка</a></li>
                         <li class="nav-item"><a href="reviews.html">Відгуки</a></li>
                     </ul>
+
+                    <div class="user-account">
+                        <a href="register.html"><img src="images/diceland-user.webp" alt="logo"></a>
+                    </div>
+                    <div class="user-stash">
+                        <a href="stash.html"><img src="images/diceland-stash.webp" alt="logo"></a>
+                    </div>
                 </nav>
                 
-                <div class="user-account">
-                    <a href="register.html"><img src="images/diceland-user.webp" alt="logo"></a>
-                </div>
-                <div class="user-stash">
-                    <a href="stash.html"><img src="images/diceland-stash.webp" alt="logo"></a>
-                </div>
             </div>
         </header>
 
+        <!--Main-->
         <main class="home-main">
             <!-- Slider & Image -->
             <div class="center">
@@ -118,7 +114,7 @@
                 </div>
             </div>
         
-            <!-- Второй блок -->
+            <!-- Section 2 -->
             <section class="partners-section">
                 <h3>Наші Партнери</h3>
                 <div class="partner-images">
@@ -126,7 +122,6 @@
                     <img src="images/diceland-partner.webp" alt="Partner 2">
                     <img src="images/diceland-partner.webp" alt="Partner 3">
                     <img src="images/diceland-partner.webp" alt="Partner 4">
-                    <img src="images/diceland-partner.webp" alt="Partner 5">
                 </div>
             </section>        
         
@@ -189,6 +184,7 @@
         </main>
         
 
+        <!--Footer-->
         <footer class="footer">
             <div class="footer-container">
                 <div class="row">

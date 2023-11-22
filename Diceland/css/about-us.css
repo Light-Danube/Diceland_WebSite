@@ -154,3 +154,56 @@ p {
 .terms-sign-img:hover {
     transform: scale(1.1);
 }
+
+/* Media Query for Tablets and larger */
+@media only screen and (max-width: 1024px) {
+    .about-us-first,
+    .about-us-second {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .about-us-first .left,
+    .about-us-second .right {
+        width: 100%; /* Take full width on smaller screens */
+    }
+
+    .team-section .team-container {
+        width: 100%; /* Display team images in a single column on tablets */
+    }
+
+    .terms-temp {
+        flex-direction: column-reverse; /* Reverse the order of text and image */
+    }
+
+    .terms-sign-img {
+        width: 100%; /* Display terms image in full width on tablets */
+        left: 0; /* Reset the left position */
+        margin-top: 10px; /* Add margin between text and image */
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 480px) {
+    .about-us-first .left,
+    .about-us-second .right {
+        width: 100%; /* Take full width on smaller screens */
+    }
+
+    .team-section .team-container,
+    .terms-sign-img {
+        width: 100%; /* Display team images and terms image in full width on mobile */
+        left: 0; /* Reset the left position */
+        margin-top: 10px; /* Add margin between text and image */
+    }
+
+    .terms-sign-text button {
+        align-self: center;
+    }
+
+    .terms-sign-img {
+        display:none;
+    }
+}

@@ -13,8 +13,11 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
         <link rel="stylesheet" href="css/stash.css">
+
+        <script src="js/stash.js"></script>
     </head>
     <body>
+        <!--Main-->
         <main class="stash-main">
             <div class="stash-container">
                 <h1>Кошик</h1>
@@ -26,9 +29,9 @@
                             <div class="product-quantity-label">Кількість:</div>
                             <input type="number" value="1" min="1" max="10" class="product-quantity-input">
                         </div>
-                
-                        <div class="product-price">2 000 грн</div>
+                        <div class="product-price" data-unit-price="999">999 грн</div>
                     </div>
+                    <button class="delete-button">X</button>
                 </div>
 
                 <div class="product">
@@ -39,21 +42,21 @@
                             <div class="product-quantity-label">Кількість:</div>
                             <input type="number" value="1" min="1" max="10" class="product-quantity-input">
                         </div>
-                
-                        <div class="product-price">2 000 грн</div>
+                        <div class="product-price" data-unit-price="555">555 грн</div>
                     </div>
+                    <button class="delete-button">X</button>
                 </div>
-
+        
                 <div class="discount">
                     <div class="discount-title">Знижка:</div>
                     <div class="discount-percentage">%%%%</div>
                 </div>
-    
+        
                 <div class="total">
                     <div class="total-title">Разом:</div>
-                    <div class="total-price">2 000 грн</div>
+                    <div class="total-price">1554.00 грн</div>
                 </div>
-    
+        
                 <div class="buttons">
                     <form action="catalog.html">
                         <button class="button">До каталогу</button>

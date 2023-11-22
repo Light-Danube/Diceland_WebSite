@@ -11,6 +11,7 @@
 /*Section 1*/
 .about-us-first {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: left;
@@ -18,7 +19,7 @@
 }
 
 .about-us-first .left {
-    width: 100%; /* Adjust as needed */
+    width: 100%;
 }
 
 .left, .right {
@@ -30,7 +31,7 @@ h2, p {
 }
 
 .about-us-first h2 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 2vh;
 }
 
@@ -179,4 +180,43 @@ p {
     background-color: #c85000;
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
+}
+
+/* Media queries for tablet screens */
+@media (max-width: 768px) {
+    .about-us-first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-first .left {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .about-main .join-container {
+        width: 100%;
+    }
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 480px) {
+    .about-main .join-button,
+    .terms-sign-text button {
+        width: 100%;
+    }
+
+    .about-main img,
+    .terms-sign-text button {
+        margin-top: 10px;
+    }
+
+    .terms-sign-text h3 {
+        font-size: 26px;
+    }
+
+    .terms-sign-text p {
+        font-size: 14px;
+    }
 }

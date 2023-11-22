@@ -8,6 +8,7 @@
 
 .content-wrapper {
     display: flex;
+    flex-wrap: nowrap;
     margin-top: 2vh;
 }
 
@@ -186,4 +187,88 @@
     background-color: #c85000;
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
+}
+
+/* Media queries for tablet screens */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: row; /* Adjusted back to row layout for larger screens */
+    }
+
+    .side-panel {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2vh; /* Added space between side panel and product list */
+    }
+
+    .content-catalog {
+        width: 100%;
+    }
+
+    .product-list-container {
+        justify-content: space-around; /* Adjusted for better spacing on smaller screens */
+    }
+
+    .product-card {
+        width: 48%; /* Adjusted for two cards per row on tablets */
+        margin-right: 0.3em;
+    }
+
+    .product-card img {
+        width: 48%;
+        height: 48%;
+    }
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 480px) {
+
+    .content-wrapper {
+        flex-direction: column; /* Adjusted back to row layout for larger screens */
+    }
+
+    .side-panel,
+    .content-catalog {
+        width: 100%; /* Full width for both side panel and product list on mobile */
+        margin-right: 0;
+    }
+
+    .product-list-container {
+        justify-content: center; /* Centered cards for better readability on mobile */
+    }
+
+    .product-card {
+        width: 100%; /* Full width for each card on mobile */
+    }
+
+    /* Additional adjustments for better spacing and readability on mobile */
+    .checkbox-label,
+    .range-input,
+    .slider-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .content-catalog {
+        padding: 10px; /* Reduced padding for better use of screen real estate on mobile */
+    }
+
+    .add-info-sec,
+    .game-room-sec {
+        margin-top: 4vh; /* Increased margin for better separation on mobile */
+    }
+
+    .add-info-text h3,
+    .game-room-text h3 {
+        font-size: 24px; /* Adjusted font size for better readability on mobile */
+    }
+
+    .add-info-text p,
+    .game-room-text p {
+        font-size: 14px; /* Adjusted font size for better readability on mobile */
+    }
+
+    .game-room-text button {
+        width: 100%; /* Full width for the button on mobile */
+        justify-content: center; /* Centered button for better alignment on mobile */
+    }
 }
